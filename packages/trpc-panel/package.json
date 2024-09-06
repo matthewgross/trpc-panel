@@ -1,5 +1,5 @@
 {
-  "name": "matthewgross-trpc-panel",
+  "name": "trpc-panel",
   "version": "1.0.2",
   "description": "UI for testing tRPC backends",
   "main": "lib/index.js",

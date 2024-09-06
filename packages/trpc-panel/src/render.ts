@@ -1,12 +1,11 @@
 import { Router } from "@trpc/server";
 import fs from "fs";
 import { fileURLToPath } from "node:url";
-import { dirname } from "node:path";
 import {
   parseRouterWithOptions,
   TrpcPanelExtraOptions,
 } from "./parse/parseRouter";
-import path from "path";
+import { dirname } from "node:path";
 
 export type RenderOptions = {
   url: string;
@@ -18,7 +17,7 @@ const defaultParseRouterOptions: Partial<TrpcPanelExtraOptions> = {
   transformer: "superjson",
 };
 
-const directoryName = path.dirname(fileURLToPath(import.meta.url));
+const directoryName = dirname(fileURLToPath(import.meta.url));
 const javascriptReplaceSymbol = "{{js}}";
 const cssReplaceSymbol = "{{css}}";
 const routerReplaceSymbol = '"{{parsed_router}}"';
