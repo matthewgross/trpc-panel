@@ -17,14 +17,14 @@ const defaultParseRouterOptions: Partial<TrpcPanelExtraOptions> = {
   transformer: "superjson",
 };
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const directoryName = dirname(fileURLToPath(import.meta.url));
 const javascriptReplaceSymbol = "{{js}}";
 const cssReplaceSymbol = "{{css}}";
 const routerReplaceSymbol = '"{{parsed_router}}"';
 const optionsReplaceSymbol = '"{{options}}"';
-const bundlePath = __dirname + "/react-app/bundle.js";
-const indexPath = __dirname + "/react-app/index.html";
-const cssPath = __dirname + "/react-app/index.css";
+const bundlePath = directoryName + "/react-app/bundle.js";
+const indexPath = directoryName + "/react-app/index.html";
+const cssPath = directoryName + "/react-app/index.css";
 const bundleJs = fs.readFileSync(bundlePath).toString();
 const indexHtml = fs.readFileSync(indexPath).toString();
 const indexCss = fs.readFileSync(cssPath).toString();
