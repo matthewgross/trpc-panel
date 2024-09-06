@@ -1,5 +1,5 @@
 {
-  "name": "trpc-panel",
+  "name": "matthewgross-trpc-panel",
   "version": "1.0.2",
   "description": "UI for testing tRPC backends",
   "main": "lib/index.js",
@@ -28,7 +28,7 @@
     "lib": "lib"
   },
   "peerDependencies": {
-    "@trpc/server": "^10.0.0",
+    "@trpc/server": "^11.0.0",
     "zod": "^3.19.1"
   },
   "devDependencies": {
